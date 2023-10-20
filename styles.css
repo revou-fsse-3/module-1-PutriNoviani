@@ -1,0 +1,230 @@
+/*style for all body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Style for the header */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Image/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Styling the language dropdown */
+select {
+    padding: 7px 20px;
+    background-color:transparent;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style for the header content */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+/* Style for the email input and button in the hero section */
+.email-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-section input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+}
+
+
+
+#get-started-button {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style for feature/main content */
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-fe, .img-fe, .iframe-fe {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-fe img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.iframe-fe iframe {
+    display: block;
+    width: 90%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Footer Style.*/
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .column {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .column a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+.copy-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* Responsive design for navigation and logo */
+@media screen and (max-width: 768px) {
+    nav button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .text-fe, .img-fe {
+        flex-basis: 100%;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 15px;
+    }
+
+    .features .row {
+        padding: 10px 0;
+    }
+
+    .img-fe,.iframe-fe{
+        width: auto;
+        height: auto;
+    }
+}
